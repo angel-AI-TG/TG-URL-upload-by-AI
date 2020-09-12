@@ -1,9 +1,8 @@
 class Translation(object):
     START_TEXT = """Hello,
     
-This is a Telegram URL Upload Bot!
-
-<b>мade вy [тнιѕ legend](https://t.me/pppppgame)</b>
+i'm a Telegram URL Upload Bot!
+see my <a href='https://rentry.co/prub9/raw'>suported urls</a> here before using me 🤓   
 
 <b>Please send me any direct download URL Link, i can upload to telegram as File/Video</b>
 
@@ -41,6 +40,7 @@ Telegram ID: <code>{}</code>
 Plan name: Free User
 Expires on: 24ᵗʰ every month"""
     HELP_USER = """Hai am URL Uploader bot..
+see my <a href='https://rentry.co/prub9/raw'>suported urls</a> here
     
 1. Send url (Link|New Name with Extension).
 2. Send Custom Thumbnail (Optional).
