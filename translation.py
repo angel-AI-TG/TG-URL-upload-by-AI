@@ -21,7 +21,7 @@ URL | filename | username | password"""
     UPLOAD_START = """ᴛʀʏɪɴɢ ᴛᴏ ᴜᴘʟᴏᴀᴅ 
     ᴘʟᴇᴀsᴇ ᴡᴀɪᴛ"""
     RCHD_BOT_API_LIMIT = "size greater than maximum allowed size (50MB). Neverthless, trying to upload."
-    RCHD_TG_API_LIMIT = "Downloaded in {} seconds.\nDetected File Size: {}\nSorry. But, I cannot upload files greater than 1.5GB due to Telegram API limitations."
+    RCHD_TG_API_LIMIT = "I cannot upload files greater than 1.95GB due to Telegram API limitations."
     AFTER_SUCCESSFUL_UPLOAD_MSG = "**Thank you for Using Me🤓.**\n\n[Jσιɳ συɾ ƈԋαɳɳҽʅ](https://t.me/AI_bot_projects)"
     AFTER_SUCCESSFUL_UPLOAD_MSG_WITH_TS = "Downloaded in {} seconds. \n\nUploaded in {} seconds. \n\nJoin : @AI_BOT_HELP "
     NOT_AUTH_USER_TEXT = "Please /upgrade your subscription."
