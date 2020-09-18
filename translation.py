@@ -51,7 +51,7 @@ see my <a href='https://rentry.co/prub9/raw'>suported urls</a> here
    DFile  - Give File without Screenshots
 
 --------
-Send /me to know current plan details
+Send /plan to know current plan details
 
 Support Group : @AI_BOT_HELP """
     REPLY_TO_DOC_GET_LINK = "Reply to a Telegram media to get High Speed Direct Download Link"
