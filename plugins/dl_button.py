@@ -291,9 +291,9 @@ File Size: {}""".format(url, humanbytes(total_length))
                     try:
                         current_message = """**Download Status**
 URL: {}
-File Size: {}
-Downloaded: {}
-ETA: {}""".format(
+📁Total Size: {}
+✅Completed: {}
+⌚️ETA: {}""".format(
     url,
     humanbytes(total_length),
     humanbytes(downloaded),
