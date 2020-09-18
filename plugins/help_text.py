@@ -80,7 +80,7 @@ async def upgrade(bot, update):
         chat_id=update.chat.id,
         text=Translation.UPGRADE_TEXT,
         parse_mode="html",
-        reply_to_message_id=update.message_id,
+        reply_to_message_id=update.message_id
     )
 
     
@@ -91,7 +91,6 @@ async def upgrade(bot, update):
     await bot.send_message(
         chat_id=update.chat.id,
         text=Translation.SOURCE_TEXT,
-        parse_mode="html",
         reply_to_message_id=update.message_id,
         disable_web_page_preview=True
     )
@@ -104,7 +103,6 @@ async def upgrade(bot, update):
     await bot.send_message(
         chat_id=update.chat.id,
         text=Translation.HOT_TEXT,
-        parse_mode="html",
         reply_to_message_id=update.message_id,
         disable_web_page_preview=True
     )    
