@@ -82,7 +82,7 @@ async def upgrade(bot, update):
         reply_to_message_id=update.message_id
     )
   
-@pyrogram.Client.on_message(pyrogram.Filters.command(["source"]))
+@pyrogram.Client.on_message(pyrogram.Filters.text(["source"]))
 async def upgrade(bot, update):
     # logger.info(update)
     TRChatBase(update.from_user.id, update.text, "/source")
