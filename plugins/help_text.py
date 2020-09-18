@@ -44,10 +44,10 @@ async def help_user(bot, update):
     )
 
 
-@pyrogram.Client.on_message(pyrogram.Filters.command(["me"]))
+@pyrogram.Client.on_message(pyrogram.Filters.command(["plan"]))
 async def get_me_info(bot, update):
     # logger.info(update)
-    TRChatBase(update.from_user.id, update.text, "/me")
+    TRChatBase(update.from_user.id, update.text, "/plan")
     chat_id = str(update.from_user.id)
     chat_id, plan_type, expires_at = GetExpiryDate(chat_id)
     await bot.send_message(
@@ -66,7 +66,8 @@ async def start(bot, update):
     await bot.send_message(
         chat_id=update.chat.id,
         text=Translation.START_TEXT,
-        reply_to_message_id=update.message_id
+        prase_mod="html", 
+        reply_to_message_id=update.message_id,
         disable_web_page_preview=True
     )
 
@@ -80,7 +81,6 @@ async def upgrade(bot, update):
         text=Translation.UPGRADE_TEXT,
         parse_mode="html",
         reply_to_message_id=update.message_id,
-        disable_web_page_preview=True
     )
 
     @pyrogram.Client.on_message(pyrogram.Filters.command(["source"]))
@@ -94,3 +94,17 @@ async def upgrade(bot, update):
         reply_to_message_id=update.message_id,
         disable_web_page_preview=True
     )
+
+
+    @pyrogram.Client.on_message(pyrogram.Filters.command(["https://www.hotstar.com"]))
+async def upgrade(bot, update):
+    # logger.info(update)
+    TRChatBase(update.from_user.id, update.text, "https://www.hotstar.com")
+    await bot.send_message(
+        chat_id=update.chat.id,
+        text=Translation.HOT_TEXT,
+        parse_mode="html",
+        reply_to_message_id=update.message_id,
+        disable_web_page_preview=True
+    )    
+       
