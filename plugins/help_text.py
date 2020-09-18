@@ -82,28 +82,4 @@ async def upgrade(bot, update):
         parse_mode="html",
         reply_to_message_id=update.message_id
     )
-
-    
-    @pyrogram.Client.on_message(pyrogram.Filters.command(["source"]))
-async def upgrade(bot, update):
-    # logger.info(update)
-    TRChatBase(update.from_user.id, update.text, "/source")
-    await bot.send_message(
-        chat_id=update.chat.id,
-        text=Translation.SOURCE_TEXT,
-        reply_to_message_id=update.message_id,
-        disable_web_page_preview=True
-    )
-
-
-    @pyrogram.Client.on_message(pyrogram.Filters.command(["https://www.hotstar.com"]))
-async def upgrade(bot, update):
-    # logger.info(update)
-    TRChatBase(update.from_user.id, update.text, "https://www.hotstar.com")
-    await bot.send_message(
-        chat_id=update.chat.id,
-        text=Translation.HOT_TEXT,
-        reply_to_message_id=update.message_id,
-        disable_web_page_preview=True
-    )    
-       
+  
