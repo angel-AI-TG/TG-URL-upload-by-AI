@@ -290,7 +290,6 @@ URL: {}
                     estimated_total_time = elapsed_time + time_to_completion
                     try:
                         current_message = """**📥Download Status📥**
-URL: {}
 📁Total Size: {}
 ✅Completed: {}
 ⌚️ETA: {}""".format(
