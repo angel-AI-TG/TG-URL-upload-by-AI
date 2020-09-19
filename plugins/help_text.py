@@ -1,6 +1,4 @@
-#!/usr/bin/env python3
-# -*- coding: utf-8 -*-
-# (c) Shrimadhav U K
+from pyrogram import Filters, InlineKeyboardMarkup, InlineKeyboardButton
 
 # the logging things
 import logging
@@ -82,6 +80,7 @@ async def upgrade(bot, update):
         reply_to_message_id=update.message_id
     )
   
+
 @pyrogram.Client.on_message(pyrogram.Filters.command(["source"]))
 async def upgrade(bot, update):
     # logger.info(update)
@@ -92,7 +91,8 @@ async def upgrade(bot, update):
         parse_mode="html",
         reply_to_message_id=update.message_id
     )
-
+  
+  
 @pyrogram.Client.on_message(pyrogram.Filters.command(["hotstar"]))
 async def upgrade(bot, update):
     # logger.info(update)
