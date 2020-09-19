@@ -60,17 +60,17 @@ async def get_me_info(bot, update):
 @pyrogram.Client.on_message(pyrogram.Filters.command(["start"]))
 async def start(bot, m):
     await m.reply_text(
-        text=f"Hi there For more details check /help.",
+        text=f"Hello,\n\ni'm a Telegram URL Upload Bot!   \n<b>Please send me any direct download URL Link, i can upload to telegram as File/Video</b> \n<b>/help if you have any doubt in using me..</b>",
         quote=True,
         reply_markup=InlineKeyboardMarkup(
             [
                 [
-                    InlineKeyboardButton('📌  Support Group', url='https://t.me/InFoTelGroup'),
-                    InlineKeyboardButton('🔖  Projects Channel', url='https://t.me/TGBotsZ')
+                    InlineKeyboardButton('📌  Support Group', url='https://t.me/AI_BOT_HELP'),
+                    InlineKeyboardButton('🔖  Projects Channel', url='https://t.me/AI_bot_projects')
                 ],
                 [
-                    InlineKeyboardButton('💡  Source Code', url='https://github.com/TGExplore/Screenshot-Bot'),
-                    InlineKeyboardButton('👨  Master', url='https://t.me/odbots')
+                    InlineKeyboardButton('💡  Supported urls', url='https://rentry.co/prub9/raw'),
+                    InlineKeyboardButton('👨  Master', url='https://t.me/pppppgame')
                 ]
             ]
         )
