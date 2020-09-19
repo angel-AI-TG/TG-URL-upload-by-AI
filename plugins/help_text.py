@@ -58,9 +58,9 @@ async def get_me_info(bot, update):
 
 
 @pyrogram.Client.on_message(pyrogram.Filters.command(["start"]))
-async def start(bot, update):
+async def start(bot, m):
     await m.reply_text(
-        text=f"Hi there {m.from_user.first_name}.\n\nI'm Screenshot Generator Bot. I can provide screenshots from your video files with out downloading the entire file (almost instantly). For more details check /help.",
+        text=f"Hi there For more details check /help.",
         quote=True,
         reply_markup=InlineKeyboardMarkup(
             [
