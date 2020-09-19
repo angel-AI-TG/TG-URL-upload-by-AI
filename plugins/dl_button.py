@@ -243,7 +243,7 @@ async def ddl_call_back(bot, update):
             time_taken_for_download = (end_one - start).seconds
             time_taken_for_upload = (end_two - end_one).seconds
             await bot.edit_message_text(
-                text=Translation.AFTER_SUCCESSFUL_UPLOAD_MSG_WITH_TS.format(time_taken_for_download, time_taken_for_upload),
+                text=Translation.AFTER_SUCCESSFUL_UPLOAD_MSG_WITH_TS.format(file_name, time_taken_for_download, time_taken_for_upload),
                 chat_id=update.message.chat.id,
                 message_id=update.message.message_id,
                 disable_web_page_preview=True
@@ -293,7 +293,6 @@ URL: {}
 📁Total Size: {}
 ✅Completed: {}
 ⌚️ETA: {}""".format(
-    url,
     humanbytes(total_length),
     humanbytes(downloaded),
     TimeFormatter(estimated_total_time)
