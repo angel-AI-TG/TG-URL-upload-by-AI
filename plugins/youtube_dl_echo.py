@@ -160,9 +160,9 @@ async def echo(bot, update):
                 if "filesize" in formats:
                     approx_file_size = humanbytes(formats["filesize"])
                 cb_string_video = "{}|{}|{}".format(
-                    "📹 video", format_id, format_ext)
+                    "video", format_id, format_ext)
                 cb_string_file = "{}|{}|{}".format(
-                    "📁 file", format_id, format_ext)
+                    "file", format_id, format_ext)
                 if format_string is not None and not "audio only" in format_string:
                     ikeyboard = [
                         pyrogram.InlineKeyboardButton(
@@ -219,9 +219,9 @@ async def echo(bot, update):
             format_id = response_json["format_id"]
             format_ext = response_json["ext"]
             cb_string_file = "{}|{}|{}".format(
-                "📁 file", format_id, format_ext)
+                "file", format_id, format_ext)
             cb_string_video = "{}|{}|{}".format(
-                "📹video", format_id, format_ext)
+                "video", format_id, format_ext)
             inline_keyboard.append([
                 pyrogram.InlineKeyboardButton(
                     "📹 SVideo",
@@ -233,9 +233,9 @@ async def echo(bot, update):
                 )
             ])
             cb_string_file = "{}={}={}".format(
-                "📁 file", format_id, format_ext)
+                "file", format_id, format_ext)
             cb_string_video = "{}={}={}".format(
-                "📹 video", format_id, format_ext)
+                "video", format_id, format_ext)
             inline_keyboard.append([
                 pyrogram.InlineKeyboardButton(
                     "📹 video",
@@ -275,9 +275,9 @@ async def echo(bot, update):
         # fallback for nonnumeric port a.k.a seedbox.io
         inline_keyboard = []
         cb_string_file = "{}={}={}".format(
-            "📁 file", "LFO", "NONE")
+            "file", "LFO", "NONE")
         cb_string_video = "{}={}={}".format(
-            "📹 video", "OFL", "ENON")
+            "video", "OFL", "ENON")
         inline_keyboard.append([
             pyrogram.InlineKeyboardButton(
                 "📹 SVideo",
